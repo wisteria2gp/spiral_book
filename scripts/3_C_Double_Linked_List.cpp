@@ -136,26 +136,43 @@ void insert(int key)
 int main()
 {
     int key,n,i;
+    //連結リストのsize
     int size=0;
+    //commandの配列、20を超えない
     char com[20];
+    //
     int np=0,nd=0;
+    //n:command数
     scanf("%d",&n);
+    //初期化
     init();
+    //
     for( i = 0; i < n; i++)
     {
+        //com : commandの文字列部分
+        //key : Nodeのkey
         scanf("%s%d",com,&key);
+        //command==insertのとき
+        //np : insert回数？
+        //連結リストのsize+1
         if(com[0]=='i'){insert(key);np++;size++;}
+        //１文字目がdだとdeleteFirst,deleteLast,delete keyの３つが考えられる
         else if (com[0]=='d')
         {
+            //deleteFirst,deleteLastは６文字以上である
             if (strlen(com)>6)
             {
+                //６文字目がFならFirst
                 if (com[6]=='F')deleteFirst();
+                //６文字目がFならLast
                 else if (com[6]=='L')deleteLast();
             }
             else
             {
+                //nd : del回数？
                 deleteKey(key);nd++;
             }
+            //連結リストのsize-1
             size--;
         }
         
