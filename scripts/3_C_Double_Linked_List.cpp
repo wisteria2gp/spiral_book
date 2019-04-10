@@ -164,7 +164,7 @@ int main()
             {
                 //６文字目がFならFirst
                 if (com[6]=='F')deleteFirst();
-                //６文字目がFならLast
+                //６文字目がLならLast
                 else if (com[6]=='L')deleteLast();
             }
             else
