@@ -5,7 +5,7 @@ To study Algorithms and Data Structures.<br>
 I often trace Hint Template in C at the problem of AOJ in C++ <br>
 and add some comments in the scripts in Japanese.<br>
 
-I refer to a book "プログラミングコンテスト攻略のためのアルゴリズムとデータ構造".
+I refer to a book "プログラミングコンテスト攻略のためのアルゴリズムとデータ構造".<br>
 
 
-Also playground of github
+Also playground of github<br>
